@@ -94,10 +94,10 @@ main .home {
 }
 
 main .home .welcome {
-    height: 100%;
     width: 40%;
     text-align: center;
-    padding-top: 10rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 main .home .welcome h1 {
