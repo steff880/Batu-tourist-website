@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.col1 {
+    grid-area: col1;
+}
+
+.col2 {
+    grid-area: col2;
+}
+
+.col3 {
+    grid-area: col3;
+}
+
+.col4 {
+    grid-area: col4;
+}
+
+.col5 {
+    grid-area: col5;
+}
+
+header {
+    min-height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10rem;
+    background-color: #fff;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+header .logo img {
+    width: 100%;
+    height: auto;
+}
+
+header .nav > .nav-list {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+header .nav > .nav-list .nav-link {
+    color: rgb(85, 85, 85);
+}
+
+main {
+    padding: 0 10rem;
+}
+
+main .home {
+    height: calc(100vh - 10rem);
+    display: flex;
+}
+
+main .home .welcome {
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+main .home .welcome h1 {
+    font-size: 6rem;
+}
+
+main .home .welcome p {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+main .home .welcome .cta {
+    font-size: 2rem;
+    padding: 1.7rem 4rem;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main .home .hero {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main .home .hero .home-img-bx {
+    position: absolute;
+    width: 55rem;
+    height: 55rem;
+    top: 15rem;
+    border-radius: 1.4rem;
+    overflow: hidden;
+}
+
+main .home .hero .home-img-bx img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.4rem;
+}
+
+main .home .hero .blob {
+    width: 60rem;
+    height: 60rem;
+}
+
+main .tourism {
+    padding: 10rem 0;
+}
+
+main .tourism h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+main .tourism p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 15rem;
+    margin-bottom: 10rem;
+    line-height: 1.6;
+}
+
+main .tourism .gallery {
+    display: grid;
+
+    grid-template-areas:
+        "col1 col1"
+        "col2 col3"
+        "col4 col5";
+    grid-template-rows: repeat(3, 40rem);
+    gap: 2rem;
+}
+
+main .tourism .gallery .col {
+    width: 100%;
+    border-radius: 1.4rem;
+    overflow: hidden;
+}
+
+main .tourism .gallery .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    height: 10rem;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p {
+    font-size: 1.7rem;
+}
