@@ -56,7 +56,6 @@ h6 {
 }
 
 header {
-    position: fixed;
     width: 100%;
     min-height: 10rem;
     display: flex;
@@ -90,12 +89,13 @@ header .nav > .nav-list .nav-link {
 }
 
 main {
-    padding: 0 10rem;
+    padding: 0rem 10rem;
 }
 
 main .home {
     height: calc(100vh - 10rem);
     display: flex;
+    align-items: center;
 }
 
 main .home .welcome {
